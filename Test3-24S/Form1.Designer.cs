@@ -41,87 +41,99 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(56, 41);
+            textBox1.Location = new Point(64, 55);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(114, 27);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(56, 89);
+            button1.Location = new Point(64, 119);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(100, 23);
+            button1.Size = new Size(114, 31);
             button1.TabIndex = 1;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(56, 137);
+            button2.Location = new Point(64, 183);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(100, 23);
+            button2.Size = new Size(114, 31);
             button2.TabIndex = 1;
             button2.Text = "Reset";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox2
             // 
             textBox2.Enabled = false;
-            textBox2.Location = new Point(250, 41);
+            textBox2.Location = new Point(286, 55);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
+            textBox2.Size = new Size(114, 27);
             textBox2.TabIndex = 0;
             textBox2.Text = "0";
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(197, 46);
+            label1.Location = new Point(225, 61);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(38, 20);
             label1.TabIndex = 2;
             label1.Text = "Sum";
             // 
             // textBox3
             // 
             textBox3.Enabled = false;
-            textBox3.Location = new Point(250, 89);
+            textBox3.Location = new Point(286, 119);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
+            textBox3.Size = new Size(114, 27);
             textBox3.TabIndex = 0;
             textBox3.Text = "0";
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(197, 94);
+            label2.Location = new Point(225, 125);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(48, 20);
             label2.TabIndex = 2;
             label2.Text = "Count";
             // 
             // textBox4
             // 
             textBox4.Enabled = false;
-            textBox4.Location = new Point(250, 137);
+            textBox4.Location = new Point(286, 183);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
+            textBox4.Size = new Size(114, 27);
             textBox4.TabIndex = 0;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(197, 142);
+            label3.Location = new Point(225, 189);
             label3.Name = "label3";
-            label3.Size = new Size(50, 15);
+            label3.Size = new Size(64, 20);
             label3.TabIndex = 2;
             label3.Text = "Average";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(415, 221);
+            ClientSize = new Size(474, 295);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -131,6 +143,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
